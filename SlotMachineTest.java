@@ -1,0 +1,296 @@
+/*
+By: Jason You
+Ms.Costin
+November 23, 2017
+The "SlotMachineGame" Program
+*/
+// Import section
+import hsa.Console; // Import the hsa.Console package
+import java.awt.Polygon; // Import the java.awt.Polygon package
+import java.awt.Color; // Import the java.awt.Color package
+import java.awt.*; // Import the java.awt.* package
+import java.awt.Graphics;
+/*
+The SlotMachineGame program.
+This class is responsible for running the main program of the game. It contains the title of the program and intro of the program.
+*/
+public class SlotMachineTest
+{
+    static Console c;
+    void title ()
+    {
+	c.clear ();
+	c.setCursor (1, 32);
+	c.print ("Slot Machine Program");
+    }
+
+
+    void printAmount (int betAmount)
+    {
+	c.setCursor (16, 32);
+	c.print ("Amount in Game:               ");
+	c.setCursor (16, 32);
+	c.print ("Amount in Game: " + betAmount);
+    }
+
+
+    void intro ()
+    {
+	title ();
+	c.println ();
+	c.println ("Welcome to the Slot Machine Program!");
+	c.println ("This program is responsible for simulating a slot machine. You can place your ");
+	c.println ("bets and either earn or lose money depending on the outcome of the program. You can only obtain money if you get all the shapes.");
+	c.println ("All triangles earn you $5, all rectangles get you $10, and all circles earn you $15. Enter '1' to exit the program.");
+
+    }
+
+
+    public static void main (String[] args)
+    {
+	String choice = "2";
+	//0 is rectangle, 1 is circle, 2 is triangle
+	int shape1 = 0; //left most shape
+	int shape2 = 0; //middle shape
+	int shape3 = 0; //right most shape
+	int betAmount = 0; //Variable for keeping track of amount of money won or lost
+	int bet = -1;
+	c = new Console ();
+	SlotMachineTest s = new SlotMachineTest ();
+	Wheel w = new Wheel ();
+	s.intro ();
+	while (true)
+	{
+	    c.setCursor (10, 1);
+
+	    c.println ("Enter any key to continue: (Press 1 to exit program) ");
+	    choice = c.readLine ();
+	    s.title ();
+	    //s.printAmount(betAmount);
+	    /*
+	    if (choice != "1")
+	    {
+		s.title ();
+		c.println ("Enter bet amount (Between $0 and $45): ");
+		betAmount = c.readInt ();
+		w = new Wheel (betAmount);
+	    }
+	    */
+	    if (choice.equals ("1"))
+	    {
+		c.close ();
+		break;
+	    }
+	    else
+	    {
+		s.title ();
+		c.setCursor (2, 23);
+		bet = -1;
+		while ((bet > 45) || (bet < 0))
+		{
+		    s.title ();
+		    c.setCursor (2, 23);
+		    c.println ("Enter bet amount (Between $0 and $45): ");
+		    c.setCursor (3, 40);
+		    bet = c.readInt ();
+		}
+
+		betAmount = betAmount - bet;
+		s.title ();
+		s.printAmount (betAmount);
+		w.spin ();
+		shape1 = w.valsOne ();
+		shape2 = w.valsTwo ();
+		shape3 = w.valsThree ();
+
+		//All Rectangles
+		if ((shape1 == 0) && (shape2 == 0) && (shape3 == 0))
+		{
+		    betAmount = betAmount - (int) (1.2 * betAmount); // Subtract because betAmount is negative value
+		}
+		//All Circles
+		else if ((shape1 == 1) && (shape2 == 1) && (shape3 == 1))
+		{
+		    betAmount = betAmount - (int) (1.15 * betAmount);
+		}
+		//All Triangles
+		else if ((shape1 == 2) && (shape2 == 2) && (shape3 == 2))
+		{
+		    betAmount = betAmount - (int) (1.1 * betAmount);
+		}
+		//Two shapes out of three are equal
+		else if (((shape1 == shape2) || (shape2 == shape3) || (shape1 == shape3)))
+		{
+		    betAmount = betAmount + 20;
+		}
+		//All shapes are different
+		else
+		{
+		    betAmount = betAmount + 5;
+		}
+	    }
+	    s.printAmount (betAmount);
+
+	}
+    }
+}
+
+abstract class Shape
+{
+    int x, y, width, height;
+    Color col;
+    protected Shape (int x, int y, int width, int height, Color col)
+    {
+	this.x = x;
+	this.y = y;
+	this.width = width;
+	this.height = height;
+	this.col = col;
+    }
+
+
+    public void draw (Console c)
+    {
+	c.setColor (col);
+    }
+
+
+    public void setColor (Color c)
+    {
+	this.col = col;
+    }
+}
+
+class Rect extends Shape
+{
+    public Rect (int x, int y, int width, int height, Color col)
+    {
+	super (x, y, width, height, col);
+    }
+
+
+    public void draw (Console c)
+    {
+	super.draw (c);
+	c.fillRect (x, y, width, height);
+    }
+}
+
+class Circle extends Shape
+{
+    public Circle (int x, int y, int width, int height, Color col)
+
+    {
+	super (x, y, width, height, col);
+
+    }
+
+
+    public void draw (Console c)
+    {
+	super.draw (c);
+	c.fillOval (x, y, width, width);
+    }
+}
+
+class Triangle extends Shape
+{
+    public Triangle (int x, int y, int width, int height, Color col)
+    {
+	super (x, y, width, height, col);
+
+    }
+
+
+    public void draw (Console c)
+    {
+	super.draw (c);
+	Polygon pol = new Polygon ();
+	int[] xc = {x, x + width / 2, x + width};
+	int yc[] = {y + height, y, y + height};
+	c.fillPolygon (xc, yc, 3);
+    }
+}
+
+class TriangleFilled extends Shape
+{
+    public TriangleFilled (int x, int y, int width, int height, Color col)
+    {
+	super (x, y, width, height, col);
+    }
+    
+    public void draw (Console c)
+    {
+	
+    }
+}
+
+class Wheel
+{
+    int[] shapeTrack = new int [3];
+    Shape[] shapes = new Shape [3];
+    int delay;
+    public static final int X = 30, Y = 30, W = 60, H = 80, PAD = 100;
+    public Wheel ()
+    {
+
+    }
+
+
+    public int valsOne ()
+    {
+	return shapeTrack [0];
+    }
+
+
+    public int valsTwo ()
+    {
+	return shapeTrack [1];
+    }
+
+
+    public int valsThree ()
+    {
+	return shapeTrack [2];
+    }
+
+
+    public void spin ()
+    {
+	Color col = new Color ((int) (Math.random () * 255), (int) (Math.random () * 255), (int) (Math.random () * 255));
+	Color[] check = new Color [3];
+	shapes = new Shape [3];
+	shapes [0] = new Rect (X, Y, W, H, col);
+	col = new Color ((int) (Math.random () * 255), (int) (Math.random () * 255), (int) (Math.random () * 255));
+	shapes [1] = new Circle (X + PAD, Y, W, H, col);
+	col = new Color ((int) (Math.random () * 255), (int) (Math.random () * 255), (int) (Math.random () * 255));
+	shapes [2] = new Triangle (X + 2 * PAD, Y, W, H, col);
+	for (delay = 10 ; delay < 400 ; delay += (int) (delay * 0.1))
+	{
+	    SlotMachineTest.c.clearRect (X, Y, (W + PAD) * 3, H + 1);
+	    for (int i = 0 ; i < shapes.length ; i++)
+	    {
+
+		col = new Color ((int) (Math.random () * 255), (int) (Math.random () * 255), (int) (Math.random () * 255));
+		check [i] = col;
+		shapes [i].setColor (col);
+	    }
+
+	    for (int n = 0 ; n < 3 ; n++)
+	    {
+		int rand = (int) (Math.random () * 3);
+		shapeTrack [n] = rand;
+		shapes [rand].x = n * PAD + X;
+		shapes [rand].draw (SlotMachineGame.c);
+	    }
+	    try
+	    {
+		Thread.sleep (delay);
+	    }
+	    catch (Exception e)
+	    {
+		System.err.println ("Error");
+	    }
+	}
+    }
+}

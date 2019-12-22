@@ -1,0 +1,354 @@
+*** ENVIRONMENT CRASH ***
+
+Date: Nov 21 2017 6:58 PM
+
+File Name: C:\Program Files (x86)\Ready to Program\Ready.exe
+Version: 1.7.1  [11]
+File Size: 2908199
+File Date: Oct 7 2003 3:57 PM
+Operating System: After Windows XP
+JVM: Ready Built-in JRE (1.4.2 or later)
+"assert" Statements: disabled
+
+
+Cause of Crash: Access Violation
+
+Previous Operations:
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 65 - C: 16 (x1)
+    Text - sz:208:5519 - slFr:65:16:1953 - slTo:65:16:1953 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 65 - C: 16
+    Text - sz:208:5519 - slFr:1953 - slTo:1953 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:1953 - slTo:1953 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 65 - C: 16 (x1)
+    Text - sz:208:5519 - slFr:65:16:1953 - slTo:65:16:1953 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: COMMAND_MOVE/SELECT_COLUMN_RIGHT
+    Move Column Right - Text: 8a9970 - Select: 0
+    Text - sz:208:5519 - slFr:1953 - slTo:1953 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: COMMAND_MOVE/SELECT_LINE_DOWN
+    Move Line Down - Text: 8a9970 - Select: 0
+    Text - sz:208:5519 - slFr:65:17:1954 - slTo:65:17:1954 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: COMMAND_MOVE/SELECT_LINE_UP
+    Move Line Up - Text: 8a9970 - Select: 0
+    Text - sz:208:5519 - slFr:66:17:1982 - slTo:66:17:1982 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: COMMAND_MOVE/SELECT_LINE_DOWN
+    Move Line Down - Text: 8a9970 - Select: 0
+    Text - sz:208:5519 - slFr:65:17:1954 - slTo:65:17:1954 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 66 - C: 16
+    Text - sz:208:5519 - slFr:66:17:1982 - slTo:66:17:1982 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:1981 - slTo:1981 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Extend Selection - Text: 8a9970 - L: 66 - C: 33 (x119)
+    Text - sz:208:5519 - slFr:1981 - slTo:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 66 - C: 33 (x1)
+    Text - sz:208:5519 - slFr:1981 - slTo:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 66 - C: 33
+    Text - sz:208:5519 - slFr:1981 - slTo:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:1991 - slTo:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 66 - C: 33 (x1)
+    Text - sz:208:5519 - slFr:66:26:1991 - slTo:66:26:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 181 - C: 18
+    Text - sz:208:5519 - slFr:66:26:1991 - slTo:66:26:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:4729 - slTo:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 181 - C: 18 (x1)
+    Text - sz:208:5519 - slFr:181:18:4729 - slTo:181:18:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 181 - C: 18
+    Text - sz:208:5519 - slFr:4729 - slTo:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:4729 - slTo:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Select Word - Text: 8a9970
+    Text - sz:208:5519 - slFr:181:18:4729 - slTo:181:18:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 181 - C: 18 (x1)
+    Text - sz:208:5519 - slFr:181:16:4727 - slTo:181:21:4732 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 181 - C: 18
+    Text - sz:208:5519 - slFr:4727 - slTo:4732 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:4729 - slTo:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Select Line - Text: 8a9970
+    Text - sz:208:5519 - slFr:181:18:4729 - slTo:181:18:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 181 - C: 18 (x1)
+    Text - sz:208:5519 - slFr:181:0:4711 - slTo:182:0:4744 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 182 - C: 30
+    Text - sz:208:5519 - slFr:4711 - slTo:4744 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:4774 - slTo:4774 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 182 - C: 30 (x1)
+    Text - sz:208:5519 - slFr:182:30:4774 - slTo:182:30:4774 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_CHAR [#19] (D)
+    Keystroke - Text: 8a9970 - ch: 19
+    Text - sz:208:5519 - slFr:4774 - slTo:4774 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Keystroke (2) - sz:208:5519 - slFr:4774 - slTo:4774 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_SETFOCUS (W)
+  CMD: COMMAND_SAVE_FILE
+    Save File (1) - Window: 10554 - SaveAs: 0 - Sel: 0 - fileno: 0 - sizeptr: 0
+    Save File (2) - name: D:\Comp Sci 12\SlotMachine\SlotMachineGame.java - fileno: 0 - sizeptr: 0
+  CMD: WM_INITMENU (W)
+  CMD: COMMAND_SAVEAS_FILE
+    Save File (1) - Window: 10554 - SaveAs: 1 - Sel: 0 - fileno: 0 - sizeptr: 0
+  CMD: WM_ACTIVATE (W)
+  CMD: WM_ACTIVATE (W)
+  CMD: WM_ACTIVATE (W)
+  CMD: WM_ACTIVATE (W)
+    Save File (2) - name: D:\Comp Sci 12\SlotMachine\SlotMachineGame2.java - fileno: 0 - sizeptr: 0
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 16 - C: 28
+    Text - sz:208:5519 - slFr:182:30:4774 - slTo:182:30:4774 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:521 - slTo:521 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 16 - C: 28 (x1)
+    Text - sz:208:5519 - slFr:16:28:521 - slTo:16:28:521 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_CHAR [2] (D) (x1) [2]
+    Keystroke - Text: 8a9970 - ch: 50
+    Text - sz:208:5519 - slFr:521 - slTo:521 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Keystroke (2) - sz:208:5520 - slFr:522 - slTo:522 - nlA:0
+    Line Starts: 205:5502 206:5512 207:5518 208:5520
+  CMD: WM_INITMENU (W)
+  CMD: COMMAND_SAVE_FILE
+    Save File (1) - Window: 10554 - SaveAs: 0 - Sel: 0 - fileno: 0 - sizeptr: 0
+    Save File (2) - name: D:\Comp Sci 12\SlotMachine\SlotMachineGame2.java - fileno: 0 - sizeptr: 0
+  CMD: WM_INITMENU (W)
+  CMD: COMMAND_OPEN_FILE (W)
+  CMD: WM_ACTIVATE (W)
+  CMD: WM_ACTIVATE (W)
+    Create File (W1) - Name: D:\Comp Sci 12\SlotMachine\SlotMachineGame.java - Skel: 0
+  CMD: WM_CREATE (W)
+  CMD: WM_CREATE (D)
+  CMD: WM_ACTIVATE (W)
+  CMD: WM_ACTIVATE (W)
+    Open File (1) - Window: 150314 - Name: D:\Comp Sci 12\SlotMachine\SlotMachineGame.java
+    Set New Text (1) - Text: 8b0158 - size: 4936
+    Set New Text (2) - sz:208:5519 - slFr:0 - slTo:0 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+
+
+Registers
+  EAX=00000000  EBX=00000000  ECX=00000000  EDX=07A4ACB8  ESI=00000061
+  EDI=0018BFC0  EBP=0018B79C  ESP=0018B774  EIP=00414B1E  FLG=00010202
+  CS=0023  DS=002B  SS=002B  ES=002B  FS=0053  GS=002B
+
+Not enough space for modules.
+
+------------------------------------------------------
+*** ENVIRONMENT CRASH ***
+
+Date: Nov 21 2017 6:58 PM
+
+File Name: C:\Program Files (x86)\Ready to Program\Ready.exe
+Version: 1.7.1  [11]
+File Size: 2908199
+File Date: Oct 7 2003 3:57 PM
+Operating System: After Windows XP
+JVM: Ready Built-in JRE (1.4.2 or later)
+"assert" Statements: disabled
+
+
+Cause of Crash: Access Violation
+
+Previous Operations:
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 65 - C: 16 (x1)
+    Text - sz:208:5519 - slFr:65:16:1953 - slTo:65:16:1953 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 65 - C: 16
+    Text - sz:208:5519 - slFr:1953 - slTo:1953 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:1953 - slTo:1953 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 65 - C: 16 (x1)
+    Text - sz:208:5519 - slFr:65:16:1953 - slTo:65:16:1953 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: COMMAND_MOVE/SELECT_COLUMN_RIGHT
+    Move Column Right - Text: 8a9970 - Select: 0
+    Text - sz:208:5519 - slFr:1953 - slTo:1953 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: COMMAND_MOVE/SELECT_LINE_DOWN
+    Move Line Down - Text: 8a9970 - Select: 0
+    Text - sz:208:5519 - slFr:65:17:1954 - slTo:65:17:1954 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: COMMAND_MOVE/SELECT_LINE_UP
+    Move Line Up - Text: 8a9970 - Select: 0
+    Text - sz:208:5519 - slFr:66:17:1982 - slTo:66:17:1982 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: COMMAND_MOVE/SELECT_LINE_DOWN
+    Move Line Down - Text: 8a9970 - Select: 0
+    Text - sz:208:5519 - slFr:65:17:1954 - slTo:65:17:1954 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 66 - C: 16
+    Text - sz:208:5519 - slFr:66:17:1982 - slTo:66:17:1982 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:1981 - slTo:1981 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Extend Selection - Text: 8a9970 - L: 66 - C: 33 (x119)
+    Text - sz:208:5519 - slFr:1981 - slTo:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 66 - C: 33 (x1)
+    Text - sz:208:5519 - slFr:1981 - slTo:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 66 - C: 33
+    Text - sz:208:5519 - slFr:1981 - slTo:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:1991 - slTo:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 66 - C: 33 (x1)
+    Text - sz:208:5519 - slFr:66:26:1991 - slTo:66:26:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 181 - C: 18
+    Text - sz:208:5519 - slFr:66:26:1991 - slTo:66:26:1991 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:4729 - slTo:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 181 - C: 18 (x1)
+    Text - sz:208:5519 - slFr:181:18:4729 - slTo:181:18:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 181 - C: 18
+    Text - sz:208:5519 - slFr:4729 - slTo:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:4729 - slTo:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Select Word - Text: 8a9970
+    Text - sz:208:5519 - slFr:181:18:4729 - slTo:181:18:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 181 - C: 18 (x1)
+    Text - sz:208:5519 - slFr:181:16:4727 - slTo:181:21:4732 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 181 - C: 18
+    Text - sz:208:5519 - slFr:4727 - slTo:4732 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:4729 - slTo:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Select Line - Text: 8a9970
+    Text - sz:208:5519 - slFr:181:18:4729 - slTo:181:18:4729 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 181 - C: 18 (x1)
+    Text - sz:208:5519 - slFr:181:0:4711 - slTo:182:0:4744 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 182 - C: 30
+    Text - sz:208:5519 - slFr:4711 - slTo:4744 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:4774 - slTo:4774 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 182 - C: 30 (x1)
+    Text - sz:208:5519 - slFr:182:30:4774 - slTo:182:30:4774 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_CHAR [#19] (D)
+    Keystroke - Text: 8a9970 - ch: 19
+    Text - sz:208:5519 - slFr:4774 - slTo:4774 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Keystroke (2) - sz:208:5519 - slFr:4774 - slTo:4774 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_SETFOCUS (W)
+  CMD: COMMAND_SAVE_FILE
+    Save File (1) - Window: 10554 - SaveAs: 0 - Sel: 0 - fileno: 0 - sizeptr: 0
+    Save File (2) - name: D:\Comp Sci 12\SlotMachine\SlotMachineGame.java - fileno: 0 - sizeptr: 0
+  CMD: WM_INITMENU (W)
+  CMD: COMMAND_SAVEAS_FILE
+    Save File (1) - Window: 10554 - SaveAs: 1 - Sel: 0 - fileno: 0 - sizeptr: 0
+  CMD: WM_ACTIVATE (W)
+  CMD: WM_ACTIVATE (W)
+  CMD: WM_ACTIVATE (W)
+  CMD: WM_ACTIVATE (W)
+    Save File (2) - name: D:\Comp Sci 12\SlotMachine\SlotMachineGame2.java - fileno: 0 - sizeptr: 0
+  CMD: WM_LBUTTONDOWN (D)
+    Set Selection (1) - Text: 8a9970 - L: 16 - C: 28
+    Text - sz:208:5519 - slFr:182:30:4774 - slTo:182:30:4774 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Set Selection (2) - sz:208:5519 - slFr:521 - slTo:521 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_LBUTTONUP (D)
+    Extend Selection - Text: 8a9970 - L: 16 - C: 28 (x1)
+    Text - sz:208:5519 - slFr:16:28:521 - slTo:16:28:521 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+  CMD: WM_CHAR [2] (D) (x1) [2]
+    Keystroke - Text: 8a9970 - ch: 50
+    Text - sz:208:5519 - slFr:521 - slTo:521 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+    Keystroke (2) - sz:208:5520 - slFr:522 - slTo:522 - nlA:0
+    Line Starts: 205:5502 206:5512 207:5518 208:5520
+  CMD: WM_INITMENU (W)
+  CMD: COMMAND_SAVE_FILE
+    Save File (1) - Window: 10554 - SaveAs: 0 - Sel: 0 - fileno: 0 - sizeptr: 0
+    Save File (2) - name: D:\Comp Sci 12\SlotMachine\SlotMachineGame2.java - fileno: 0 - sizeptr: 0
+  CMD: WM_INITMENU (W)
+  CMD: COMMAND_OPEN_FILE (W)
+  CMD: WM_ACTIVATE (W)
+  CMD: WM_ACTIVATE (W)
+    Create File (W1) - Name: D:\Comp Sci 12\SlotMachine\SlotMachineGame.java - Skel: 0
+  CMD: WM_CREATE (W)
+  CMD: WM_CREATE (D)
+  CMD: WM_ACTIVATE (W)
+  CMD: WM_ACTIVATE (W)
+    Open File (1) - Window: 150314 - Name: D:\Comp Sci 12\SlotMachine\SlotMachineGame.java
+    Set New Text (1) - Text: 8b0158 - size: 4936
+    Set New Text (2) - sz:208:5519 - slFr:0 - slTo:0 - nlA:0
+    Line Starts: 205:5501 206:5511 207:5517 208:5519
+
+
+Registers
+  EAX=00000000  EBX=00000000  ECX=00000000  EDX=07A4ACB8  ESI=00000061
+  EDI=0018BFC0  EBP=0018B79C  ESP=0018B774  EIP=00414B1E  FLG=00010202
+  CS=0023  DS=002B  SS=002B  ES=002B  FS=0053  GS=002B
+
+Not enough space for modules.
+
+------------------------------------------------------
+
+Crashed in Crash Handler!
